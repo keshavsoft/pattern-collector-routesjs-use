@@ -3,9 +3,10 @@ import path from 'path';
 
 import getAllMatches from "pattern-collector";
 
-const searchString = /^[ \t]*router\.(get|post|put|delete|patch|use)\b.*$/gm;
+// const searchString = /^[ \t]*router\.use\b.*\);\s*$/gm;
+const searchString = /^[ \t]*router\.use\b.*?;/gm;
 
-const fileNameToPull = "end-points.js";
+const fileNameToPull = "routes.js";
 
 const startFunc = ({ inFilePath }) => {
     try {
@@ -25,4 +26,4 @@ const startFunc = ({ inFilePath }) => {
     return [];
 };
 
-export default startFunc
+export default startFunc;
