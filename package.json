@@ -12,7 +12,7 @@
     "extractor"
   ],
   "dependencies": {
-    "pattern-collector": "^1.5.5"
+    "pattern-collector": "^1.5.6"
   },
   "type": "module",
   "exports": {
